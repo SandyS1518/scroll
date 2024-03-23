@@ -1,0 +1,29 @@
+.body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    white-space: nowrap;
+    animation: scrollImages 10s linear infinite;
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 25px;
+    
+  }
+  
+  @keyframes scrollImages {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
